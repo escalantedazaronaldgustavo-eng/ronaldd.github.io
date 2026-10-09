@@ -3,7 +3,7 @@
     --bg-card: rgba(26, 26, 36, 0.65);
     --text-main: #E2E2E2;
     --text-muted: #8A8A99;
-    --accent-rojo: #D81F26; /* Rojo carmesí estilo Akira/Netflix */
+    --accent-rojo: #D81F26; 
     --borde-suave: #2A2A35;
 }
 
@@ -19,7 +19,7 @@ body {
     min-height: 100vh;
 }
 
-/* Contenedor principal con efecto Glassmorphism sobrio */
+
 .contenedor-streaming {
     background: var(--bg-card);
     backdrop-filter: blur(12px);
@@ -32,7 +32,7 @@ body {
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
 }
 
-/* Tipografía de Títulos */
+
 h1, h2 {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
@@ -55,7 +55,6 @@ h2 {
     padding-bottom: 8px;
 }
 
-/* Etiquetas (Labels) */
 label {
     display: block;
     font-size: 0.85rem;
@@ -67,7 +66,6 @@ label {
     letter-spacing: 0.5px;
 }
 
-/* Inputs de texto y números */
 input[type="text"],
 input[type="password"],
 input[type="email"],
@@ -86,7 +84,6 @@ input[type="time"] {
     transition: all 0.3s ease;
 }
 
-/* Efecto Hover/Focus con resplandor (Glow) */
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus,
@@ -99,7 +96,6 @@ input[type="time"]:focus {
     background-color: #121216;
 }
 
-/* Radios, Checkboxes y Rangos */
 input[type="radio"],
 input[type="checkbox"],
 input[type="range"] {
@@ -117,7 +113,6 @@ input[type="range"] {
     font-size: 0.95rem;
 }
 
-/* Botones */
 button {
     background-color: var(--accent-rojo);
     color: #FFFFFF;
@@ -141,7 +136,6 @@ button:hover {
     transform: translateY(-2px);
 }
 
-/* Mensajes de JavaScript */
 #mensaje, #nota_sumada {
     background-color: rgba(216, 31, 38, 0.05);
     border-left: 4px solid var(--accent-rojo);
@@ -154,10 +148,9 @@ button:hover {
 }
 
 #mensaje:empty, #nota_sumada:empty {
-    display: none; /* Oculta los contenedores si no hay mensaje */
+    display: none; 
 }
 
-/* Grid para las notas */
 .notas-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
